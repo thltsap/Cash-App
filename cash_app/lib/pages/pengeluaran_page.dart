@@ -153,7 +153,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                       ),
                       child: TextFormField(
                         cursorColor: primary200,
-                        keyboardType: TextInputType.datetime,
+                        keyboardType: TextInputType.text,
                         controller: _descriptionController,
                         decoration: const InputDecoration(
                           border: InputBorder.none,
