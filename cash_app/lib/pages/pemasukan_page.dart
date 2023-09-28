@@ -104,7 +104,7 @@ class _PemasukanPageState extends State<PemasukanPage> {
                           border: InputBorder.none,
                           icon: Icon(
                             Icons.calendar_today,
-                            color: primary200,
+                            color: primary400,
                           ),
                           hintText: 'Tanggal',
                         ),
@@ -131,7 +131,7 @@ class _PemasukanPageState extends State<PemasukanPage> {
                           icon: Text(
                             'Rp',
                             style: TextStyle(
-                              color: primary200,
+                              color: primary400,
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
                             ),
@@ -160,7 +160,7 @@ class _PemasukanPageState extends State<PemasukanPage> {
                           border: InputBorder.none,
                           icon: Icon(
                             Icons.description,
-                            color: primary200,
+                            color: primary400,
                           ),
                           hintText: 'Keterangan',
                         ),
@@ -175,7 +175,7 @@ class _PemasukanPageState extends State<PemasukanPage> {
                                 borderRadius: BorderRadius.circular(8.0),
                                 color: white,
                                 border: Border.all(
-                                  color: secondaryColor,
+                                  color: primary500,
                                 )),
                             margin: const EdgeInsets.only(top: 12, right: 12),
                             padding: const EdgeInsets.symmetric(
@@ -186,7 +186,7 @@ class _PemasukanPageState extends State<PemasukanPage> {
                             child: const Text(
                               'Batal',
                               style: TextStyle(
-                                color: secondaryColor,
+                                color: primary500,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -207,7 +207,7 @@ class _PemasukanPageState extends State<PemasukanPage> {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8.0),
-                              color: secondaryColor,
+                              color: primary400,
                             ),
                             margin: const EdgeInsets.only(top: 12),
                             padding: const EdgeInsets.symmetric(
@@ -222,6 +222,33 @@ class _PemasukanPageState extends State<PemasukanPage> {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(right: 10.0),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(top: 15.0),
+                          width: 110,
+                          height: 45,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: exit400,
+                              minimumSize: const Size.fromHeight(50),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ).copyWith(
+                                elevation: ButtonStyleButton.allOrNull(0.0)),
+                            onPressed: () {
+                              _dateController.clear();
+                              _nominalController.clear();
+                              _descriptionController.clear();
+                            },
+                            child: Text(
+                              'Reset',
+                              style: subHeadingSemiBold2White,
                             ),
                           ),
                         ),

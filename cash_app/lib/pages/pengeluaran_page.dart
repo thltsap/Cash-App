@@ -93,7 +93,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                         ),
                       ),
                       child: TextFormField(
-                        cursorColor: primary200,
+                        cursorColor: primary400,
                         keyboardType: TextInputType.text,
                         controller: _dateController,
                         onTap: () {
@@ -103,7 +103,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                           border: InputBorder.none,
                           icon: Icon(
                             Icons.calendar_today,
-                            color: primary200,
+                            color: primary400,
                           ),
                           hintText: 'Tanggal',
                         ),
@@ -122,7 +122,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                         ),
                       ),
                       child: TextFormField(
-                        cursorColor: primary200,
+                        cursorColor: primary400,
                         keyboardType: TextInputType.number,
                         controller: _nominalController,
                         decoration: const InputDecoration(
@@ -130,7 +130,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                           icon: Text(
                             'Rp',
                             style: TextStyle(
-                              color: primary200,
+                              color: primary400,
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
                             ),
@@ -152,14 +152,14 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                         ),
                       ),
                       child: TextFormField(
-                        cursorColor: primary200,
+                        cursorColor: primary400,
                         keyboardType: TextInputType.text,
                         controller: _descriptionController,
                         decoration: const InputDecoration(
                           border: InputBorder.none,
                           icon: Icon(
                             Icons.description,
-                            color: primary200,
+                            color: primary400,
                           ),
                           hintText: 'Keterangan',
                         ),
@@ -174,7 +174,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                                 borderRadius: BorderRadius.circular(8.0),
                                 color: white,
                                 border: Border.all(
-                                  color: secondaryColor,
+                                  color: primary500,
                                 )),
                             margin: const EdgeInsets.only(top: 12, right: 12),
                             padding: const EdgeInsets.symmetric(
@@ -185,7 +185,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                             child: const Text(
                               'Batal',
                               style: TextStyle(
-                                color: secondaryColor,
+                                color: primary500,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -206,7 +206,7 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8.0),
-                              color: secondaryColor,
+                              color: primary500,
                             ),
                             margin: const EdgeInsets.only(top: 12),
                             padding: const EdgeInsets.symmetric(
@@ -221,6 +221,33 @@ class _PengeluaranPageState extends State<PengeluaranPage> {
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                               ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(right: 10.0),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(top: 15.0),
+                          width: 110,
+                          height: 45,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: exit400,
+                              minimumSize: const Size.fromHeight(50),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ).copyWith(
+                                elevation: ButtonStyleButton.allOrNull(0.0)),
+                            onPressed: () {
+                              _dateController.clear();
+                              _nominalController.clear();
+                              _descriptionController.clear();
+                            },
+                            child: Text(
+                              'Reset',
+                              style: subHeadingSemiBold2White,
                             ),
                           ),
                         ),

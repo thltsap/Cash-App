@@ -184,10 +184,6 @@ class _LoginPageState extends State<LoginPage> {
                             'Login',
                             style: subHeadingSemiBold2White,
                           ),
-                          // Text(
-                          //   'Sign In',
-                          //   style: subHeadingSemiBold2White,
-                          // ),
                         ),
                       ),
                     ],

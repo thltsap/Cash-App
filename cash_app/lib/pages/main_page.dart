@@ -43,7 +43,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primary100,
+      backgroundColor: neutral100,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -154,7 +154,7 @@ class _MainPageState extends State<MainPage> {
                               child: Container(
                                 margin: const EdgeInsets.only(right: 5),
                                 child: Card(
-                                  color: primary500,
+                                  color: primary300,
                                   shape: RoundedRectangleBorder(
                                     side: const BorderSide(
                                         color: Colors.transparent),
@@ -178,7 +178,9 @@ class _MainPageState extends State<MainPage> {
                                             image: const AssetImage(
                                               'images/pemasukan.png',
                                             ),
-                                            fit: BoxFit.cover,
+                                            fit: BoxFit.contain,
+                                            width: 140,
+                                            height: 140,
                                           ),
                                         ),
                                       ),
@@ -208,7 +210,7 @@ class _MainPageState extends State<MainPage> {
                               child: Container(
                                 margin: const EdgeInsets.only(left: 5),
                                 child: Card(
-                                  color: primary500,
+                                  color: primary300,
                                   shape: RoundedRectangleBorder(
                                     side: const BorderSide(
                                         color: Colors.transparent),
@@ -232,7 +234,9 @@ class _MainPageState extends State<MainPage> {
                                             image: const AssetImage(
                                               'images/pengeluaran.png',
                                             ),
-                                            fit: BoxFit.fill,
+                                            fit: BoxFit.contain,
+                                            width: 130,
+                                            height: 130,
                                           ),
                                         ),
                                       ),
@@ -272,7 +276,7 @@ class _MainPageState extends State<MainPage> {
                         child: Container(
                           margin: const EdgeInsets.only(right: 5),
                           child: Card(
-                            color: primary500,
+                            color: primary300,
                             shape: RoundedRectangleBorder(
                               side: const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(20),
@@ -290,7 +294,9 @@ class _MainPageState extends State<MainPage> {
                                       image: const AssetImage(
                                         'images/dokumen.png',
                                       ),
-                                      fit: BoxFit.cover,
+                                      fit: BoxFit.contain,
+                                      width: 130,
+                                      height: 130,
                                     ),
                                   ),
                                 ),
@@ -319,7 +325,7 @@ class _MainPageState extends State<MainPage> {
                         child: Container(
                           margin: const EdgeInsets.only(left: 5),
                           child: Card(
-                            color: primary500,
+                            color: primary300,
                             shape: RoundedRectangleBorder(
                               side: const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(20),
@@ -342,7 +348,9 @@ class _MainPageState extends State<MainPage> {
                                       image: const AssetImage(
                                         'images/setting.png',
                                       ),
-                                      fit: BoxFit.cover,
+                                      fit: BoxFit.contain,
+                                      width: 130,
+                                      height: 130,
                                     ),
                                   ),
                                 ),
