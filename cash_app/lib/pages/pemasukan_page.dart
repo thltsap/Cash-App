@@ -170,40 +170,40 @@ class _PemasukanPageState extends State<PemasukanPage> {
                       children: [
                         InkWell(
                           onTap: () => {Navigator.pop(context)},
-                          child: Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8.0),
-                                color: white,
-                                border: Border.all(
-                                  color: primary500,
-                                )),
-                            margin: const EdgeInsets.only(top: 12, right: 12),
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 12,
-                              horizontal: 28,
-                            ),
-                            alignment: Alignment.center,
-                            child: const Text(
-                              'Batal',
-                              style: TextStyle(
-                                color: primary500,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () async {
-                            await _createTransaction();
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => MainPage(
-                                  userId: id,
-                                ),
-                              ),
-                            );
-                          },
+                          //   child: Container(
+                          //     decoration: BoxDecoration(
+                          //         borderRadius: BorderRadius.circular(8.0),
+                          //         color: white,
+                          //         border: Border.all(
+                          //           color: primary500,
+                          //         )),
+                          //     margin: const EdgeInsets.only(top: 12, right: 12),
+                          //     padding: const EdgeInsets.symmetric(
+                          //       vertical: 12,
+                          //       horizontal: 28,
+                          //     ),
+                          //     alignment: Alignment.center,
+                          //     child: const Text(
+                          //       'Batal',
+                          //       style: TextStyle(
+                          //         color: primary500,
+                          //         fontSize: 16,
+                          //         fontWeight: FontWeight.bold,
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                          // InkWell(
+                          //   onTap: () async {
+                          //     await _createTransaction();
+                          //     Navigator.of(context).push(
+                          //       MaterialPageRoute(
+                          //         builder: (context) => MainPage(
+                          //           userId: id,
+                          //         ),
+                          //       ),
+                          //     );
+                          //   },
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8.0),

@@ -20,14 +20,14 @@ class _LoginPageState extends State<LoginPage> {
 
   String errorMessage = '';
   var usernameColor = neutral200;
-  var passworColor = neutral200;
+  var passwordColor = neutral200;
 
   void _loadPage(
       String errorMessage, var usernameColor, var passwordColor) async {
     setState(() {
       this.errorMessage = errorMessage;
       this.usernameColor = usernameColor;
-      this.passworColor = passworColor;
+      this.passwordColor = passwordColor;
     });
   }
 
@@ -83,12 +83,6 @@ class _LoginPageState extends State<LoginPage> {
                               child: TextFormField(
                                 controller: _usernameController,
                                 keyboardType: TextInputType.text,
-                                validator: (value) {
-                                  if (value!.isEmpty) {
-                                    return "Username tidak boleh kosong.";
-                                  }
-                                  return null;
-                                },
                                 decoration: InputDecoration(
                                   prefixIcon: const Icon(Icons.person),
                                   border: OutlineInputBorder(
@@ -125,12 +119,6 @@ class _LoginPageState extends State<LoginPage> {
                               child: TextFormField(
                                 keyboardType: TextInputType.visiblePassword,
                                 controller: _passwordController,
-                                validator: (value) {
-                                  if (value!.isEmpty) {
-                                    return "Password tidak boleh kosong.";
-                                  }
-                                  return null;
-                                },
                                 decoration: InputDecoration(
                                   prefixIcon: const Icon(Icons.lock),
                                   border: OutlineInputBorder(
