@@ -4,5 +4,5 @@ A new Flutter project.
 
 ## Getting Started
 
-Username: thalita
-PAssword: user
+## Username: thalita
+## Password: user
