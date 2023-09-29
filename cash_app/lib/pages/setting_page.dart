@@ -123,6 +123,16 @@ class _SettingPageState extends State<SettingPage> {
                               borderSide: const BorderSide(color: primary900),
                               borderRadius: BorderRadius.circular(10.0),
                             ),
+                            contentPadding:
+                                const EdgeInsets.symmetric(vertical: 3),
+                            suffixIcon: IconButton(
+                              onPressed: showHide,
+                              icon: Icon(_secureText
+                                  ? Icons.visibility_off
+                                  : Icons.visibility),
+                              color: neutral500,
+                              focusColor: primary900,
+                            ),
                             hintText: 'Old Password',
                             hintStyle: bodyMedium2Grey,
                           ),
@@ -149,6 +159,16 @@ class _SettingPageState extends State<SettingPage> {
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(color: primary900),
                               borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            contentPadding:
+                                const EdgeInsets.symmetric(vertical: 3),
+                            suffixIcon: IconButton(
+                              onPressed: showHide,
+                              icon: Icon(_secureText
+                                  ? Icons.visibility_off
+                                  : Icons.visibility),
+                              color: neutral500,
+                              focusColor: primary900,
                             ),
                             hintText: 'New Password',
                             hintStyle: bodyMedium2Grey,
